@@ -5,7 +5,7 @@ Home: http://mmp2.github.io/megaman
 
 Package license: BSD 2-clause
 
-Feedstock license: BSD
+Feedstock license: BSD 3-Clause
 
 Summary: Manifold Learning for Millions of Points
 
@@ -69,6 +69,7 @@ Terminology
 
 Current build status
 ====================
+
 Linux: [![Circle CI](https://circleci.com/gh/conda-forge/megaman-feedstock.svg?style=svg)](https://circleci.com/gh/conda-forge/megaman-feedstock)
 OSX: [![TravisCI](https://travis-ci.org/conda-forge/megaman-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/megaman-feedstock) 
 Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/megaman-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/megaman-feedstock/branch/master)
