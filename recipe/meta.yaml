@@ -1,4 +1,4 @@
-{% set version = "0.1.1" %}
+{% set version = "0.2" %}
 
 package:
     name: megaman
@@ -6,8 +6,8 @@ package:
 
 source:
     fn: megaman-{{ version }}.tar.gz
-    url: https://pypi.python.org/packages/source/m/megaman/megaman-{{ version }}.tar.gz
-    md5: 924d05877a3bcfc86d4f48ea9436cdd4
+    url: https://pypi.io/packages/source/m/megaman/megaman-{{ version }}.tar.gz
+    md5: 4039b7e7845cf0345c87b75a9fc08fb1
 
 build:
     number: 0
@@ -19,7 +19,8 @@ requirements:
         - numpy x.x
         - cython
         - flann
-        - gcc 4.8*  # [osx]
+        - isl 0.12.*   # [osx]
+        - gcc 4.8*     # [osx]
     run:
         - python
         - numpy x.x
@@ -27,6 +28,7 @@ requirements:
         - scikit-learn >=0.17
         - pyamg
         - pyflann
+        - isl 0.12.*   # [osx]
         - libgcc 4.8*  # [osx]
 
 test:
