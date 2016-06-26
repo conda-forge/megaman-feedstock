@@ -19,8 +19,7 @@ requirements:
         - numpy x.x
         - cython
         - flann
-        - isl 0.12.*   # [osx]
-        - gcc 4.8*     # [osx]
+        - gcc          # [osx]
     run:
         - python
         - numpy x.x
@@ -28,8 +27,7 @@ requirements:
         - scikit-learn >=0.17
         - pyamg
         - pyflann
-        - isl 0.12.*   # [osx]
-        - libgcc 4.8*  # [osx]
+        - libgcc       # [osx]
 
 test:
     requires:
