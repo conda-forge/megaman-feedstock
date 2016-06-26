@@ -10,7 +10,7 @@ source:
     md5: 4039b7e7845cf0345c87b75a9fc08fb1
 
 build:
-    number: 0
+    number: 1
     skip: true    # [win]
 
 requirements:
@@ -19,8 +19,7 @@ requirements:
         - numpy x.x
         - cython
         - flann
-        - isl 0.12.*   # [osx]
-        - gcc 4.8*     # [osx]
+        - gcc          # [unix]
     run:
         - python
         - numpy x.x
@@ -28,8 +27,7 @@ requirements:
         - scikit-learn >=0.17
         - pyamg
         - pyflann
-        - isl 0.12.*   # [osx]
-        - libgcc 4.8*  # [osx]
+        - libgcc       # [unix]
 
 test:
     requires:
