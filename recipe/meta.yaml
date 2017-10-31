@@ -6,8 +6,8 @@ package:
 
 source:
     fn: megaman-{{ version }}.tar.gz
-    url: https://pypi.io/packages/source/m/megaman/megaman-{{ version }}.tar.gz
-    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+    url: https://github.com/mmp2/megaman/archive/v{{ version }}.tar.gz
+    sha256: 1cd6f31393f9e6df306015eb8bcda348811398a74aaad796ed5a524ee6bb53f9
 
 build:
     number: 0
