@@ -1,4 +1,4 @@
-{% set version = "0.2" %}
+{% set version = "0.3" %}
 
 package:
     name: megaman
@@ -7,10 +7,10 @@ package:
 source:
     fn: megaman-{{ version }}.tar.gz
     url: https://pypi.io/packages/source/m/megaman/megaman-{{ version }}.tar.gz
-    md5: 4039b7e7845cf0345c87b75a9fc08fb1
+    sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
 
 build:
-    number: 1
+    number: 0
     skip: true    # [win]
 
 requirements:
