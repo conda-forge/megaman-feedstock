@@ -16,13 +16,13 @@ build:
 requirements:
     build:
         - python
-        - numpy x.x
+        - numpy 1.8.*
         - cython
         - flann 1.9.1
         - gcc          # [unix]
     run:
         - python
-        - numpy x.x
+        - numpy >=1.8
         - scipy >=0.16
         - scikit-learn >=0.17
         - pyamg
