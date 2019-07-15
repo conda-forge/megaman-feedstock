@@ -7,26 +7,26 @@ package:
 source:
     fn: megaman-{{ version }}.tar.gz
     url: https://pypi.io/packages/source/m/megaman/megaman-{{ version }}.tar.gz
-    md5: 4039b7e7845cf0345c87b75a9fc08fb1
+    sha256: adac46cbc76961a4dafbdd10b68d636ba7e1276abc84ab4a7e78546014f45c92
 
 build:
-    number: 1
+    number: 2
     skip: true    # [win]
 
 requirements:
     build:
         - python
-        - numpy x.x
+        - numpy 1.8.*
         - cython
-        - flann
+        - flann 1.9.1
         - gcc          # [unix]
     run:
         - python
-        - numpy x.x
+        - numpy >=1.8
         - scipy >=0.16
         - scikit-learn >=0.17
         - pyamg
-        - pyflann
+        - pyflann 1.9.1
         - libgcc       # [unix]
 
 test:
@@ -40,9 +40,11 @@ test:
 
 about:
     home: http://mmp2.github.io/megaman
-    license: BSD 2-clause
+    license: BSD-2-Clause
+    license_family: BSD
     license_file: LICENSE
     summary: "Manifold Learning for Millions of Points"
+    dev_url: https://github.com/mmp2/megaman/
 
 extra:
     recipe-maintainers:
