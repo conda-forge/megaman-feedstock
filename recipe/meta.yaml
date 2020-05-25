@@ -15,18 +15,18 @@ build:
 
 requirements:
     build:
-        - python
-        - numpy x.x
+        - python <=3.6
+        - numpy 1.11.*
         - cython
-        - flann
+        - flann 1.8.4
         - gcc          # [unix]
     run:
-        - python
-        - numpy x.x
+        - python <=3.6
+        - numpy >=1.11
         - scipy >=0.16
         - scikit-learn >=0.17
         - pyamg
-        - pyflann
+        - pyflann 1.8.4
         - libgcc       # [unix]
 
 test:
