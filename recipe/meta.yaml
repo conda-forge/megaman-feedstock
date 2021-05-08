@@ -14,7 +14,7 @@ build:
     skip: true    # [win]
 
 requirements:
-    build:
+    host:
         - python
         - numpy x.x
         - cython
