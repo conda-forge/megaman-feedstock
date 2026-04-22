@@ -10,11 +10,11 @@ source:
     md5: 4039b7e7845cf0345c87b75a9fc08fb1
 
 build:
-    number: 1
+    number: 2
     skip: true    # [win]
 
 requirements:
-    build:
+    host:
         - python
         - numpy x.x
         - cython
